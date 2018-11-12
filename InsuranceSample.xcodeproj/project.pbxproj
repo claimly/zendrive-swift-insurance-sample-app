@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		606CA5B876BC42E160911740 /* Pods_InsuranceSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63A92BBEC315FC2529A1B95 /* Pods_InsuranceSample.framework */; };
+		80A35D75BFA7881BDC2F6A50 /* Pods_InsuranceSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B3699CF7AFBF888501B6A9 /* Pods_InsuranceSampleTests.framework */; };
+		BAC84DA1E87B360D8C185011 /* Pods_InsuranceSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3DBA8C23D8ABDB2F5AAB0 /* Pods_InsuranceSampleUITests.framework */; };
+		EC98D2221FCE738300273D07 /* LocationPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98D2211FCE738300273D07 /* LocationPermissionManager.swift */; };
+		ECB4FA491FCE2FA500289A64 /* ZendriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4FA481FCE2FA500289A64 /* ZendriveManager.swift */; };
+		ECF13A4D1FCCF3E2002E2234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A4C1FCCF3E2002E2234 /* AppDelegate.swift */; };
+		ECF13A541FCCF3E2002E2234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF13A531FCCF3E2002E2234 /* Assets.xcassets */; };
+		ECF13A571FCCF3E2002E2234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF13A551FCCF3E2002E2234 /* LaunchScreen.storyboard */; };
+		ECF13A621FCCF3E2002E2234 /* InsuranceSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A611FCCF3E2002E2234 /* InsuranceSampleTests.swift */; };
+		ECF13A6D1FCCF3E2002E2234 /* InsuranceSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A6C1FCCF3E2002E2234 /* InsuranceSampleUITests.swift */; };
+		ECF13A861FCCF5DE002E2234 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF13A841FCCF5DE002E2234 /* LoginViewController.xib */; };
+		ECF13A871FCCF5DE002E2234 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A851FCCF5DE002E2234 /* LoginViewController.swift */; };
+		ECF13A891FCCF5F1002E2234 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A881FCCF5F1002E2234 /* UserDefaultsManager.swift */; };
+		ECF13A8C1FCCFE82002E2234 /* OnDutyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A8A1FCCFE82002E2234 /* OnDutyViewController.swift */; };
+		ECF13A8D1FCCFE82002E2234 /* OnDutyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF13A8B1FCCFE82002E2234 /* OnDutyViewController.xib */; };
+		ECF13A901FCCFE8D002E2234 /* OffDutyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A8E1FCCFE8D002E2234 /* OffDutyViewController.swift */; };
+		ECF13A911FCCFE8D002E2234 /* OffDutyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF13A8F1FCCFE8D002E2234 /* OffDutyViewController.xib */; };
+		ECF13A931FCD083D002E2234 /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A921FCD083D002E2234 /* TripManager.swift */; };
+		ECF13A951FCD0DBF002E2234 /* ThreadingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF13A941FCD0DBF002E2234 /* ThreadingUtil.swift */; };
+		ECF167381FD9AE3800ED4F03 /* SlimLogglyDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF167351FD9AE3800ED4F03 /* SlimLogglyDestination.swift */; };
+		ECF167391FD9AE3800ED4F03 /* SlimLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF167361FD9AE3800ED4F03 /* SlimLogger.swift */; };
+		ECF1673A1FD9AE3800ED4F03 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF167371FD9AE3800ED4F03 /* AppLogger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF13A5E1FCCF3E2002E2234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF13A411FCCF3E2002E2234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF13A481FCCF3E2002E2234;
+			remoteInfo = InsuranceSample;
+		};
+		ECF13A691FCCF3E2002E2234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF13A411FCCF3E2002E2234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF13A481FCCF3E2002E2234;
+			remoteInfo = InsuranceSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024707076F49FFD4B5F1EDAB /* Pods-InsuranceSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsuranceSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InsuranceSampleTests/Pods-InsuranceSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		3544CFA4584DD7306144375B /* Pods-InsuranceSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsuranceSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InsuranceSample/Pods-InsuranceSample.debug.xcconfig"; sourceTree = "<group>"; };
+		9AC9993BAAFA59D1717DAA10 /* Pods-InsuranceSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsuranceSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InsuranceSampleTests/Pods-InsuranceSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4840D64BB6111C9F553003F /* Pods-InsuranceSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsuranceSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-InsuranceSample/Pods-InsuranceSample.release.xcconfig"; sourceTree = "<group>"; };
+		C2B3699CF7AFBF888501B6A9 /* Pods_InsuranceSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsuranceSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63A92BBEC315FC2529A1B95 /* Pods_InsuranceSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsuranceSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7C4EDC57B93A5F4CCF74F8 /* Pods-InsuranceSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsuranceSampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InsuranceSampleUITests/Pods-InsuranceSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF3DBA8C23D8ABDB2F5AAB0 /* Pods_InsuranceSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsuranceSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC98D2211FCE738300273D07 /* LocationPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionManager.swift; sourceTree = "<group>"; };
+		ECB4FA481FCE2FA500289A64 /* ZendriveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendriveManager.swift; sourceTree = "<group>"; };
+		ECF13A491FCCF3E2002E2234 /* InsuranceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsuranceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF13A4C1FCCF3E2002E2234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECF13A531FCCF3E2002E2234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECF13A561FCCF3E2002E2234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECF13A581FCCF3E2002E2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF13A5D1FCCF3E2002E2234 /* InsuranceSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsuranceSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF13A611FCCF3E2002E2234 /* InsuranceSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceSampleTests.swift; sourceTree = "<group>"; };
+		ECF13A631FCCF3E2002E2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF13A681FCCF3E2002E2234 /* InsuranceSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsuranceSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF13A6C1FCCF3E2002E2234 /* InsuranceSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceSampleUITests.swift; sourceTree = "<group>"; };
+		ECF13A6E1FCCF3E2002E2234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF13A841FCCF5DE002E2234 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		ECF13A851FCCF5DE002E2234 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ECF13A881FCCF5F1002E2234 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		ECF13A8A1FCCFE82002E2234 /* OnDutyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDutyViewController.swift; sourceTree = "<group>"; };
+		ECF13A8B1FCCFE82002E2234 /* OnDutyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnDutyViewController.xib; sourceTree = "<group>"; };
+		ECF13A8E1FCCFE8D002E2234 /* OffDutyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffDutyViewController.swift; sourceTree = "<group>"; };
+		ECF13A8F1FCCFE8D002E2234 /* OffDutyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffDutyViewController.xib; sourceTree = "<group>"; };
+		ECF13A921FCD083D002E2234 /* TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
+		ECF13A941FCD0DBF002E2234 /* ThreadingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadingUtil.swift; sourceTree = "<group>"; };
+		ECF167351FD9AE3800ED4F03 /* SlimLogglyDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimLogglyDestination.swift; sourceTree = "<group>"; };
+		ECF167361FD9AE3800ED4F03 /* SlimLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlimLogger.swift; sourceTree = "<group>"; };
+		ECF167371FD9AE3800ED4F03 /* AppLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		FFE06ACC8CABD85D2C6D43CC /* Pods-InsuranceSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsuranceSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InsuranceSampleUITests/Pods-InsuranceSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF13A461FCCF3E2002E2234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606CA5B876BC42E160911740 /* Pods_InsuranceSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF13A5A1FCCF3E2002E2234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A35D75BFA7881BDC2F6A50 /* Pods_InsuranceSampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF13A651FCCF3E2002E2234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC84DA1E87B360D8C185011 /* Pods_InsuranceSampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A287559663CA792E70E5F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D63A92BBEC315FC2529A1B95 /* Pods_InsuranceSample.framework */,
+				C2B3699CF7AFBF888501B6A9 /* Pods_InsuranceSampleTests.framework */,
+				EBF3DBA8C23D8ABDB2F5AAB0 /* Pods_InsuranceSampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECF13A401FCCF3E2002E2234 = {
+			isa = PBXGroup;
+			children = (
+				ECF13A4B1FCCF3E2002E2234 /* InsuranceSample */,
+				ECF13A601FCCF3E2002E2234 /* InsuranceSampleTests */,
+				ECF13A6B1FCCF3E2002E2234 /* InsuranceSampleUITests */,
+				ECF13A4A1FCCF3E2002E2234 /* Products */,
+				F0883BBB54248A8DFC99E438 /* Pods */,
+				2A287559663CA792E70E5F2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF13A4A1FCCF3E2002E2234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF13A491FCCF3E2002E2234 /* InsuranceSample.app */,
+				ECF13A5D1FCCF3E2002E2234 /* InsuranceSampleTests.xctest */,
+				ECF13A681FCCF3E2002E2234 /* InsuranceSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF13A4B1FCCF3E2002E2234 /* InsuranceSample */ = {
+			isa = PBXGroup;
+			children = (
+				ECF13A821FCCF5DE002E2234 /* Utils */,
+				ECF13A831FCCF5DE002E2234 /* ViewControllers */,
+				ECF13A4C1FCCF3E2002E2234 /* AppDelegate.swift */,
+				ECF13A531FCCF3E2002E2234 /* Assets.xcassets */,
+				ECF13A551FCCF3E2002E2234 /* LaunchScreen.storyboard */,
+				ECF13A581FCCF3E2002E2234 /* Info.plist */,
+			);
+			path = InsuranceSample;
+			sourceTree = "<group>";
+		};
+		ECF13A601FCCF3E2002E2234 /* InsuranceSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF13A611FCCF3E2002E2234 /* InsuranceSampleTests.swift */,
+				ECF13A631FCCF3E2002E2234 /* Info.plist */,
+			);
+			path = InsuranceSampleTests;
+			sourceTree = "<group>";
+		};
+		ECF13A6B1FCCF3E2002E2234 /* InsuranceSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF13A6C1FCCF3E2002E2234 /* InsuranceSampleUITests.swift */,
+				ECF13A6E1FCCF3E2002E2234 /* Info.plist */,
+			);
+			path = InsuranceSampleUITests;
+			sourceTree = "<group>";
+		};
+		ECF13A821FCCF5DE002E2234 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ECF167341FD9AE3800ED4F03 /* Logger */,
+				ECF13A881FCCF5F1002E2234 /* UserDefaultsManager.swift */,
+				ECF13A921FCD083D002E2234 /* TripManager.swift */,
+				ECF13A941FCD0DBF002E2234 /* ThreadingUtil.swift */,
+				EC98D2211FCE738300273D07 /* LocationPermissionManager.swift */,
+				ECB4FA481FCE2FA500289A64 /* ZendriveManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ECF13A831FCCF5DE002E2234 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECF13A851FCCF5DE002E2234 /* LoginViewController.swift */,
+				ECF13A841FCCF5DE002E2234 /* LoginViewController.xib */,
+				ECF13A8A1FCCFE82002E2234 /* OnDutyViewController.swift */,
+				ECF13A8B1FCCFE82002E2234 /* OnDutyViewController.xib */,
+				ECF13A8E1FCCFE8D002E2234 /* OffDutyViewController.swift */,
+				ECF13A8F1FCCFE8D002E2234 /* OffDutyViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECF167341FD9AE3800ED4F03 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				ECF167371FD9AE3800ED4F03 /* AppLogger.swift */,
+				ECF167361FD9AE3800ED4F03 /* SlimLogger.swift */,
+				ECF167351FD9AE3800ED4F03 /* SlimLogglyDestination.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		F0883BBB54248A8DFC99E438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3544CFA4584DD7306144375B /* Pods-InsuranceSample.debug.xcconfig */,
+				B4840D64BB6111C9F553003F /* Pods-InsuranceSample.release.xcconfig */,
+				9AC9993BAAFA59D1717DAA10 /* Pods-InsuranceSampleTests.debug.xcconfig */,
+				024707076F49FFD4B5F1EDAB /* Pods-InsuranceSampleTests.release.xcconfig */,
+				DB7C4EDC57B93A5F4CCF74F8 /* Pods-InsuranceSampleUITests.debug.xcconfig */,
+				FFE06ACC8CABD85D2C6D43CC /* Pods-InsuranceSampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF13A481FCCF3E2002E2234 /* InsuranceSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF13A711FCCF3E2002E2234 /* Build configuration list for PBXNativeTarget "InsuranceSample" */;
+			buildPhases = (
+				C23A830189E213D03CBCE7E1 /* [CP] Check Pods Manifest.lock */,
+				ECF13A451FCCF3E2002E2234 /* Sources */,
+				ECF13A461FCCF3E2002E2234 /* Frameworks */,
+				ECF13A471FCCF3E2002E2234 /* Resources */,
+				6F435B197DF3FF752F777A23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InsuranceSample;
+			productName = InsuranceSample;
+			productReference = ECF13A491FCCF3E2002E2234 /* InsuranceSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF13A5C1FCCF3E2002E2234 /* InsuranceSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF13A741FCCF3E2002E2234 /* Build configuration list for PBXNativeTarget "InsuranceSampleTests" */;
+			buildPhases = (
+				A64217C0B56E207812983C87 /* [CP] Check Pods Manifest.lock */,
+				ECF13A591FCCF3E2002E2234 /* Sources */,
+				ECF13A5A1FCCF3E2002E2234 /* Frameworks */,
+				ECF13A5B1FCCF3E2002E2234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF13A5F1FCCF3E2002E2234 /* PBXTargetDependency */,
+			);
+			name = InsuranceSampleTests;
+			productName = InsuranceSampleTests;
+			productReference = ECF13A5D1FCCF3E2002E2234 /* InsuranceSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECF13A671FCCF3E2002E2234 /* InsuranceSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF13A771FCCF3E2002E2234 /* Build configuration list for PBXNativeTarget "InsuranceSampleUITests" */;
+			buildPhases = (
+				CC2844E943F8B1B91796DCD1 /* [CP] Check Pods Manifest.lock */,
+				ECF13A641FCCF3E2002E2234 /* Sources */,
+				ECF13A651FCCF3E2002E2234 /* Frameworks */,
+				ECF13A661FCCF3E2002E2234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF13A6A1FCCF3E2002E2234 /* PBXTargetDependency */,
+			);
+			name = InsuranceSampleUITests;
+			productName = InsuranceSampleUITests;
+			productReference = ECF13A681FCCF3E2002E2234 /* InsuranceSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF13A411FCCF3E2002E2234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Zendrive;
+				TargetAttributes = {
+					ECF13A481FCCF3E2002E2234 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					ECF13A5C1FCCF3E2002E2234 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECF13A481FCCF3E2002E2234;
+					};
+					ECF13A671FCCF3E2002E2234 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ECF13A481FCCF3E2002E2234;
+					};
+				};
+			};
+			buildConfigurationList = ECF13A441FCCF3E2002E2234 /* Build configuration list for PBXProject "InsuranceSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF13A401FCCF3E2002E2234;
+			productRefGroup = ECF13A4A1FCCF3E2002E2234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF13A481FCCF3E2002E2234 /* InsuranceSample */,
+				ECF13A5C1FCCF3E2002E2234 /* InsuranceSampleTests */,
+				ECF13A671FCCF3E2002E2234 /* InsuranceSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF13A471FCCF3E2002E2234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF13A571FCCF3E2002E2234 /* LaunchScreen.storyboard in Resources */,
+				ECF13A541FCCF3E2002E2234 /* Assets.xcassets in Resources */,
+				ECF13A861FCCF5DE002E2234 /* LoginViewController.xib in Resources */,
+				ECF13A911FCCFE8D002E2234 /* OffDutyViewController.xib in Resources */,
+				ECF13A8D1FCCFE82002E2234 /* OnDutyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF13A5B1FCCF3E2002E2234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF13A661FCCF3E2002E2234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F435B197DF3FF752F777A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InsuranceSample/Pods-InsuranceSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InsuranceSample/Pods-InsuranceSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A64217C0B56E207812983C87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InsuranceSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23A830189E213D03CBCE7E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InsuranceSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2844E943F8B1B91796DCD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InsuranceSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF13A451FCCF3E2002E2234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF13A901FCCFE8D002E2234 /* OffDutyViewController.swift in Sources */,
+				ECF167391FD9AE3800ED4F03 /* SlimLogger.swift in Sources */,
+				ECF167381FD9AE3800ED4F03 /* SlimLogglyDestination.swift in Sources */,
+				ECF1673A1FD9AE3800ED4F03 /* AppLogger.swift in Sources */,
+				ECF13A871FCCF5DE002E2234 /* LoginViewController.swift in Sources */,
+				ECB4FA491FCE2FA500289A64 /* ZendriveManager.swift in Sources */,
+				ECF13A931FCD083D002E2234 /* TripManager.swift in Sources */,
+				ECF13A4D1FCCF3E2002E2234 /* AppDelegate.swift in Sources */,
+				ECF13A891FCCF5F1002E2234 /* UserDefaultsManager.swift in Sources */,
+				ECF13A951FCD0DBF002E2234 /* ThreadingUtil.swift in Sources */,
+				ECF13A8C1FCCFE82002E2234 /* OnDutyViewController.swift in Sources */,
+				EC98D2221FCE738300273D07 /* LocationPermissionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF13A591FCCF3E2002E2234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF13A621FCCF3E2002E2234 /* InsuranceSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF13A641FCCF3E2002E2234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF13A6D1FCCF3E2002E2234 /* InsuranceSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF13A5F1FCCF3E2002E2234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF13A481FCCF3E2002E2234 /* InsuranceSample */;
+			targetProxy = ECF13A5E1FCCF3E2002E2234 /* PBXContainerItemProxy */;
+		};
+		ECF13A6A1FCCF3E2002E2234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF13A481FCCF3E2002E2234 /* InsuranceSample */;
+			targetProxy = ECF13A691FCCF3E2002E2234 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECF13A551FCCF3E2002E2234 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF13A561FCCF3E2002E2234 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF13A6F1FCCF3E2002E2234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECF13A701FCCF3E2002E2234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF13A721FCCF3E2002E2234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3544CFA4584DD7306144375B /* Pods-InsuranceSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGC42GYEBQ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = InsuranceSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zendrive.InsuranceSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECF13A731FCCF3E2002E2234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4840D64BB6111C9F553003F /* Pods-InsuranceSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGC42GYEBQ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = InsuranceSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zendrive.InsuranceSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECF13A751FCCF3E2002E2234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC9993BAAFA59D1717DAA10 /* Pods-InsuranceSampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGC42GYEBQ;
+				INFOPLIST_FILE = InsuranceSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zendrive.InsuranceSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsuranceSample.app/InsuranceSample";
+			};
+			name = Debug;
+		};
+		ECF13A761FCCF3E2002E2234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 024707076F49FFD4B5F1EDAB /* Pods-InsuranceSampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGC42GYEBQ;
+				INFOPLIST_FILE = InsuranceSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zendrive.InsuranceSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InsuranceSample.app/InsuranceSample";
+			};
+			name = Release;
+		};
+		ECF13A781FCCF3E2002E2234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7C4EDC57B93A5F4CCF74F8 /* Pods-InsuranceSampleUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGC42GYEBQ;
+				INFOPLIST_FILE = InsuranceSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zendrive.InsuranceSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InsuranceSample;
+			};
+			name = Debug;
+		};
+		ECF13A791FCCF3E2002E2234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFE06ACC8CABD85D2C6D43CC /* Pods-InsuranceSampleUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGC42GYEBQ;
+				INFOPLIST_FILE = InsuranceSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zendrive.InsuranceSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InsuranceSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF13A441FCCF3E2002E2234 /* Build configuration list for PBXProject "InsuranceSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF13A6F1FCCF3E2002E2234 /* Debug */,
+				ECF13A701FCCF3E2002E2234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF13A711FCCF3E2002E2234 /* Build configuration list for PBXNativeTarget "InsuranceSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF13A721FCCF3E2002E2234 /* Debug */,
+				ECF13A731FCCF3E2002E2234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF13A741FCCF3E2002E2234 /* Build configuration list for PBXNativeTarget "InsuranceSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF13A751FCCF3E2002E2234 /* Debug */,
+				ECF13A761FCCF3E2002E2234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF13A771FCCF3E2002E2234 /* Build configuration list for PBXNativeTarget "InsuranceSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF13A781FCCF3E2002E2234 /* Debug */,
+				ECF13A791FCCF3E2002E2234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF13A411FCCF3E2002E2234 /* Project object */;
+}

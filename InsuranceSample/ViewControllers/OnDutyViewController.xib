@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnDutyViewController">
+            <connections>
+                <outlet property="acceptARequestButton" destination="KHd-OA-Ia2" id="Jg0-27-Ziz"/>
+                <outlet property="cancelPickupButton" destination="RMT-rL-dD4" id="b5g-h0-buZ"/>
+                <outlet property="dropPassengerButton" destination="jJc-xW-vUP" id="9tB-QZ-90T"/>
+                <outlet property="goOffDutyButton" destination="zH4-pU-eaC" id="Nm3-DG-dgM"/>
+                <outlet property="insurancePeriodLabel" destination="Kis-tG-djN" id="Ln0-vO-skd"/>
+                <outlet property="passengerInCarLabel" destination="fqd-og-e2j" id="vj0-e3-hgd"/>
+                <outlet property="passengerWaitingForPickupLabel" destination="jmV-j4-R39" id="Jb2-tW-3Zd"/>
+                <outlet property="pickAPassengerButton" destination="pBu-MN-C0k" id="QJP-sw-SI1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insurance Period: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kis-tG-djN">
+                    <rect key="frame" x="57" y="108" width="260" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Akh-pM-rY0"/>
+                        <constraint firstAttribute="width" constant="260" id="LEh-Le-Yby"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers In Car: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqd-og-e2j">
+                    <rect key="frame" x="57" y="137" width="260" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="8yf-F7-sJe"/>
+                        <constraint firstAttribute="height" constant="21" id="CeU-mI-2Bc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers awaiting pickup: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmV-j4-R39">
+                    <rect key="frame" x="57" y="166" width="260" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="2Qw-18-XpG"/>
+                        <constraint firstAttribute="height" constant="21" id="kqG-Tp-oaW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHd-OA-Ia2">
+                    <rect key="frame" x="66" y="238" width="243" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="cDi-M5-5j0"/>
+                        <constraint firstAttribute="width" constant="243" id="q8R-9u-nhE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Accept New Request">
+                        <color key="titleColor" red="0.21848085522651672" green="0.62158882617950439" blue="0.45577502250671387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="acceptNewRequestButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="5nn-9d-OTT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMT-rL-dD4">
+                    <rect key="frame" x="66" y="299" width="243" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="X65-Qn-jjO"/>
+                        <constraint firstAttribute="width" constant="243" id="jPy-ut-16N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Cancel Pickup">
+                        <color key="titleColor" red="0.21848085522651672" green="0.62158882617950439" blue="0.45577502250671387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelPickupButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="Lir-a3-cGy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBu-MN-C0k">
+                    <rect key="frame" x="66" y="360" width="243" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="AwI-F8-IlC"/>
+                        <constraint firstAttribute="width" constant="243" id="xBL-CQ-VNg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Pickup Passenger">
+                        <color key="titleColor" red="0.21848085522651672" green="0.62158882617950439" blue="0.45577502250671387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pickupPassengerButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="JT5-k1-nry"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJc-xW-vUP">
+                    <rect key="frame" x="66" y="421" width="243" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="243" id="6xO-g6-w68"/>
+                        <constraint firstAttribute="height" constant="46" id="Hc8-8n-VfS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Drop Passenger">
+                        <color key="titleColor" red="0.21848085522651672" green="0.62158882617950439" blue="0.45577502250671387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="dropPassengerButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="lfW-pl-Tg1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-pU-eaC">
+                    <rect key="frame" x="66" y="497" width="243" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="MZ3-8E-Mdj"/>
+                        <constraint firstAttribute="width" constant="243" id="eG3-JW-nN0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Go Off Duty">
+                        <color key="titleColor" red="0.21848085522651672" green="0.62158882617950439" blue="0.45577502250671387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="goOffDutyButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="NX9-Kh-EG6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kis-tG-djN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="5gM-wR-850"/>
+                <constraint firstItem="jmV-j4-R39" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7uc-Fb-PPn"/>
+                <constraint firstItem="zH4-pU-eaC" firstAttribute="top" secondItem="jJc-xW-vUP" secondAttribute="bottom" constant="30" id="8dQ-T4-YBQ"/>
+                <constraint firstItem="KHd-OA-Ia2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FFj-kP-2Pb"/>
+                <constraint firstItem="pBu-MN-C0k" firstAttribute="top" secondItem="RMT-rL-dD4" secondAttribute="bottom" constant="15" id="FvC-ph-rpg"/>
+                <constraint firstItem="RMT-rL-dD4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kkk-Hd-xKx"/>
+                <constraint firstItem="KHd-OA-Ia2" firstAttribute="top" secondItem="jmV-j4-R39" secondAttribute="bottom" constant="51" id="QfG-wx-SM0"/>
+                <constraint firstItem="jJc-xW-vUP" firstAttribute="top" secondItem="pBu-MN-C0k" secondAttribute="bottom" constant="15" id="TMw-l1-tGl"/>
+                <constraint firstItem="jJc-xW-vUP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WSY-yH-SZn"/>
+                <constraint firstItem="pBu-MN-C0k" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cQS-pD-U6Z"/>
+                <constraint firstItem="zH4-pU-eaC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dQw-cy-cbT"/>
+                <constraint firstItem="jmV-j4-R39" firstAttribute="top" secondItem="fqd-og-e2j" secondAttribute="bottom" constant="8" id="dZI-Dy-Y98"/>
+                <constraint firstItem="fqd-og-e2j" firstAttribute="top" secondItem="Kis-tG-djN" secondAttribute="bottom" constant="8" id="fe6-12-1oE"/>
+                <constraint firstItem="Kis-tG-djN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tA1-ya-jbk"/>
+                <constraint firstItem="RMT-rL-dD4" firstAttribute="top" secondItem="KHd-OA-Ia2" secondAttribute="bottom" constant="15" id="u8o-4Z-IEd"/>
+                <constraint firstItem="fqd-og-e2j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vOI-ug-zzY"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
