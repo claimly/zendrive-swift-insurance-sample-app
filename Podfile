@@ -7,7 +7,7 @@ target 'InsuranceSample' do
 
   # Pods for InsuranceSample
   pod 'MBProgressHUD', '~> 0.8'
-  pod 'ZendriveSDK', :git => 'https://bitbucket.org/zendrive-root/zendrive_cocoapod.git', :tag => '5.2.1'
+  pod 'ZendriveSDK', :git => 'https://bitbucket.org/zendrive-root/zendrive_cocoapod.git', :tag => '5.5.0'
 
   target 'InsuranceSampleTests' do
     inherit! :search_paths
