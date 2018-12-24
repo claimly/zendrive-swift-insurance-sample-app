@@ -6,7 +6,7 @@ target 'InsuranceSample' do
   use_frameworks!
 
   # Pods for InsuranceSample
-  pod 'MBProgressHUD', '~> 0.8'
+  pod 'MBProgressHUD', '~> 0.9.2'
   pod 'ZendriveSDK', :git => 'https://bitbucket.org/zendrive-root/zendrive_cocoapod.git', :tag => '5.5.0'
 
   target 'InsuranceSampleTests' do

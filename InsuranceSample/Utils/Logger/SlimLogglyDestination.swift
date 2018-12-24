@@ -51,7 +51,7 @@ class SlimLogglyDestination: LogDestination {
     fileprivate var observer: NSObjectProtocol?
 
     init() {
-        dateFormatter.timeZone = TimeZone(abbreviation: "UTC") as TimeZone!
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         observer = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UIApplicationWillResignActiveNotification"), object: nil, queue: nil, using: {
             [unowned self] note in

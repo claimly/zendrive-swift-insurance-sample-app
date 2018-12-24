@@ -14,7 +14,7 @@ PODS:
     - Reachability (~> 3.1.1)
 
 DEPENDENCIES:
-  - MBProgressHUD (~> 0.8)
+  - MBProgressHUD (~> 0.9.2)
   - ZendriveSDK (from `https://bitbucket.org/zendrive-root/zendrive_cocoapod.git`, tag `5.5.0`)
 
 SPEC REPOS:
@@ -43,6 +43,6 @@ SPEC CHECKSUMS:
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   ZendriveSDK: 0ef9c1bdeeb3cce948c484f088cd590dfa8f5b6e
 
-PODFILE CHECKSUM: 4823b299ce6aff0cc7dcf483b2c9b30c2d4f2844
+PODFILE CHECKSUM: bb489ee72bec7594a971f5739e266fa161ad96f7
 
 COCOAPODS: 1.5.3
